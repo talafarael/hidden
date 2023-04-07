@@ -31,7 +31,9 @@ $(".button").click(()=>{
     console.log(ff[nummasiv])
    let phot =linkimg[nummasiv]
     $('.img_wrapper').attr('src',phot
-)}
+)}else{
+  
+}
 })
 
 
