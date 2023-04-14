@@ -7,6 +7,7 @@ let nummasiv=0
 
 
 $(document).ready(()=>{
+
     $('.img_wrapper').attr('src','https://logiclike.com/files/media/qz/gi/3kozk9o8_5e3ab5b846592.jpg')
     $('.rulles').hide()
     $('.h2').hide()
@@ -16,24 +17,45 @@ $(document).ready(()=>{
         $('.h2').toggle()
     })
 
+    $('.hh').knob({
+        'inputColor':'white',
+        'fgColor':'red',
+        'max':'12',
+        'width':'200',
+        'height':'200'
+        
+    }).css({
+        'position' : 'relative',
+        
+        
+})
+
+   
+   $('.hh') .trigger('change');
+  
+   
+   $('.dial') .trigger('change');
+
 $(".button").click(()=>{
     let aa = $(".gg").val()
     $(".gg").val('')
 
 
- 
+
  
 
    
  if(ff[nummasiv]==aa){
-    
-    nummasiv++
+   
+    nummasiv++ 
+    $('.hh').val(nummasiv).trigger('change')
     console.log(ff[nummasiv])
    let phot =linkimg[nummasiv]
     $('.img_wrapper').attr('src',phot
 )}else{
   
 }
+
 })
 
 
